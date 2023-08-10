@@ -11,17 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "MyApp",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hello Flutter"),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("Hi"), Text("Dart"), Text("Flutter")],
-          ),
-        ),
-      ),
+      home: ,
       theme: ThemeData(primarySwatch: Colors.yellow),
     );
   }
@@ -37,6 +27,16 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Hello Flutter"),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Text("Hi"), Text("Dart"), Text("Flutter")],
+          ),
+        ),
+      );
   }
 }
